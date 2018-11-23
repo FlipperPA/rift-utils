@@ -4,7 +4,7 @@ import requests
 
 
 sender = 'tallen@wharton.upenn.edu'
-receivers = ['6107217758@vtext.com']
+receivers = ['**********@vtext.com']
 
 events = [
     'Critical Mass',
