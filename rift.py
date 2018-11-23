@@ -13,7 +13,6 @@ events = [
     'Macabre Feast',
     'Melting Point',
     'Rude Awakening',
-    'Under the Table',
     'Thorns Everywhere',
     'Why So Sad',
     'Boiling Ambition',
