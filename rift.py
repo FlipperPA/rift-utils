@@ -3,7 +3,7 @@ import smtplib
 import requests
 
 
-sender = 'tallen@wharton.upenn.edu'
+sender = 'blah@blah.com'
 receivers = ['**********@vtext.com']
 
 events = [
