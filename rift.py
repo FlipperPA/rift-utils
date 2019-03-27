@@ -8,22 +8,17 @@ receivers = ['6107217758@vtext.com']
 
 events = [
     'Critical Mass',
-    'Fear From Freedom',
     'Inner Maelstrom',
     'Macabre Feast',
     'Melting Point',
-    'Rude Awakening',
     'Thorns Everywhere',
-    'Why So Sad',
-    'Boiling Ambition',
     'Scuttled Dreams',
-    'Dreams of Blood and Bone',
-    'Chilled to the Bone',
-    'The Snow Pack',
-    'Hunger of the Deep',
     'Fortress Defense',
     'Champions of the Firestorm',
     'The Craft of Conflict',
+    'Leviathan',
+    'Unnatural Spec',
+    'Aggressive Colo',
 ]
 
 r = requests.get("https://rift.events/na/en_US.html")
