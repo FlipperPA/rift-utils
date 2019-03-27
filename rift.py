@@ -24,6 +24,8 @@ events = [
 
 r = requests.get("https://rift.events/na/en_US.html")
 
+print(r.text)
+
 found_events = []
 for event in events:
     if event in r.text:
