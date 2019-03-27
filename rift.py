@@ -19,6 +19,7 @@ events = [
     'Leviathan',
     'Unnatural Spec',
     'Aggressive Colo',
+    'Take It All',
 ]
 
 r = requests.get("https://rift.events/na/en_US.html")
