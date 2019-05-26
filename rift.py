@@ -3,28 +3,19 @@ import smtplib
 import requests
 
 
-sender = 'blah@blah.com'
-receivers = ['**********@vtext.com']
+sender = 'tim@pyphilly.org'
+receivers = ['6107217758@vtext.com']
 
 events = [
     'Critical Mass',
     'Inner Maelstrom',
-    'Macabre Feast',
     'Melting Point',
     'Thorns Everywhere',
-    'Scuttled Dreams',
-    'Fortress Defense',
     'Champions of the Firestorm',
     'The Craft of Conflict',
-    'Leviathan',
-    'Unnatural Spec',
-    'Aggressive Colo',
-    'Take It All',
 ]
 
 r = requests.get("https://rift.events/na/en_US.html")
-
-print(r.text)
 
 found_events = []
 for event in events:
