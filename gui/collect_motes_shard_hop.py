@@ -65,9 +65,10 @@ for x in range(0, 999999):
         current_shard = "Deepwood"
     sleep(10)
 
-    for five_min_loop in range(0, 12):
+    for five_min_loop in range(0, 3):
         print("In five minute loop...")
         for x in range(1, 3):
+            action(MOTE_COLLECTOR, 3)
             pyautogui.press("tab")
             action(RANGED, 1, 3)
             pyautogui.keyDown('a')
@@ -78,6 +79,7 @@ for x in range(0, 999999):
             action(MOTE_COLLECTOR, 3)
             action(RANGED, 1, 3)
             action(AE, 1, 1)
+            action(MOTE_COLLECTOR, 3)
             action(HEAL_SMALL, 0, 1)
 
         action(HEAL_BIG, 1, 3)
