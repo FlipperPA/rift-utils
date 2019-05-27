@@ -13,6 +13,8 @@ events = [
     'Thorns Everywhere',
     'Champions of the Firestorm',
     'The Craft of Conflict',
+    # 'Aggressive',
+    # 'Speculation',
 ]
 
 r = requests.get("https://rift.events/na/en_US.html")
