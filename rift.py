@@ -3,12 +3,9 @@ import smtplib
 import requests
 
 
-# Enter your email address here. You can often email your mobile phone.
-# For example, with Verizon, you can send a text by emailing `phonenumber@vtext.com`
-sender = 'youremail@yourdomain.org'
-receivers = ['youremail@yourdomain.com']
+sender = 'tim@pyphilly.org'
+receivers = ['6107217758@vtext.com']
 
-# Enter the Zone Events you want to track here
 events = [
     'Critical Mass',
     'Inner Maelstrom',
@@ -16,8 +13,8 @@ events = [
     'Thorns Everywhere',
     'Champions of the Firestorm',
     'The Craft of Conflict',
-    'Aggressive',
-    'Speculation',
+    # 'Aggressive',
+    # 'Speculation',
 ]
 
 r = requests.get("https://rift.events/na/en_US.html")
