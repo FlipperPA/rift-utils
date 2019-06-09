@@ -47,19 +47,21 @@ def shard_hop(shard="Deepwood"):
 current_shard = "Deepwood"
 
 for x in range(0, 999999):
-    action(START_RIFT, 3)
+    action(START_RIFT, 4)
 
-    for five_min_loop in range(0, 7):
+    for five_min_loop in range(0, 4):
         print("In five minute loop...")
         for x in range(1, 10):
             pyautogui.press("tab")
-            action(RANGED, 1, 3)
+            action(RANGED, 1.5, 1)
+
             pyautogui.keyDown('a')
             sleep(0.7)
             pyautogui.keyUp('a')
-            pyautogui.press("tab")
 
+            pyautogui.press("tab")
             action(RANGED, 1, 3)
+
             action(AE, 1, 1)
             action(HEAL_SMALL, 0, 1)
 
