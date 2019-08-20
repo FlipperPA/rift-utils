@@ -47,6 +47,7 @@ def shard_hop(shard="Deepwood"):
 current_shard = "Deepwood"
 
 for x in range(0, 999999):
+    action(RANGED, 1.5, 1)
     action(START_RIFT, 4)
 
     for five_min_loop in range(0, 4):
