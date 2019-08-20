@@ -8,8 +8,6 @@ receivers = ['6107217758@vtext.com']
 
 events = [
     'Critical Mass',
-    'Inner Maelstrom',
-    'Melting Point',
     'Thorns Everywhere',
     'Champions of the Firestorm',
     'The Craft of Conflict',
