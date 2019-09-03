@@ -3,8 +3,10 @@ from time import sleep
 import pyautogui
 from pyscreenshot import grab
 
+# Goboro Reef looking south, 4091, 6597
+# In dark corner above rocks
 FISH_START = (730, 821)
-CAST_POINT = (302, 436)
+CAST_POINT = (572, 225)
 
 while True:
     pyautogui.moveTo(298, 681)
@@ -48,6 +50,8 @@ while True:
         diff_pct = (dif / 255.0 * 100) / ncomponents
         print(f"{x} Difference (percentage): {diff_pct}")
 
+        # Use 1.75 for Ghar Station in Gobor
+        # Use 1.00 for Tarken Ascent
         if diff_pct > 1.75:
             pyautogui.rightClick()
             sleep(0.3)
