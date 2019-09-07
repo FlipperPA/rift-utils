@@ -5,8 +5,10 @@ from pyscreenshot import grab
 
 # Goboro Reef looking south, 4091, 6597
 # In dark corner above rocks
+# Brevane / Cape Jule 8471, 11970 looking NW
 FISH_START = (730, 821)
-CAST_POINT = (572, 225)
+CAST_POINT = (725, 418)
+THRESHOLD = 4.00
 
 while True:
     pyautogui.moveTo(298, 681)
@@ -23,10 +25,10 @@ while True:
 
     original_image = grab(
         bbox=(
-            CAST_POINT[0],
-            CAST_POINT[1],
-            CAST_POINT[0] + 35,
-            CAST_POINT[1] + 35,
+            CAST_POINT[0] - 10,
+            CAST_POINT[1] - 10,
+            CAST_POINT[0] + 10,
+            CAST_POINT[1] + 10,
         )
     )
     for x in range(0, 70):
@@ -52,6 +54,6 @@ while True:
 
         # Use 1.75 for Ghar Station in Gobor
         # Use 1.00 for Tarken Ascent
-        if diff_pct > 1.75:
+        if diff_pct > THRESHOLD:
             pyautogui.rightClick()
             sleep(0.3)
