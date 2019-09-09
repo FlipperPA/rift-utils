@@ -6,8 +6,16 @@ from pyscreenshot import grab
 # Goboro Reef looking south, 4091, 6597
 # In dark corner above rocks
 # Brevane / Cape Jule 8471, 11970 looking NW
+# Dusken / Steppes 15268, 8354 looking N / NW
 FISH_START = (730, 821)
-CAST_POINT = (725, 418)
+CAST_POINT = (725, 418)  # Cape Jule
+CAST_POINT = (739, 501)  # Steppes
+CAPTURE_REGION = (
+    CAST_POINT[0] - 10,
+    CAST_POINT[1] - 10,
+    CAST_POINT[0] + 10,
+    CAST_POINT[1] + 10,
+)
 THRESHOLD = 4.00
 
 while True:
@@ -24,21 +32,11 @@ while True:
     sleep(0.2)
 
     original_image = grab(
-        bbox=(
-            CAST_POINT[0] - 10,
-            CAST_POINT[1] - 10,
-            CAST_POINT[0] + 10,
-            CAST_POINT[1] + 10,
-        )
+        bbox=CAPTURE_REGION,
     )
     for x in range(0, 70):
         current_image = grab(
-            bbox=(
-                CAST_POINT[0],
-                CAST_POINT[1],
-                CAST_POINT[0] + 35,
-                CAST_POINT[1] + 35,
-            )
+            bbox=CAPTURE_REGION,
         )
 
         pairs = zip(original_image.getdata(), current_image.getdata())
