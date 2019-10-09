@@ -9,14 +9,14 @@ from pyscreenshot import grab
 # Dusken / Steppes 15268, 8354 looking N / NW
 FISH_START = (730, 821)
 CAST_POINT = (725, 418)  # Cape Jule
-CAST_POINT = (739, 501)  # Steppes
+CAST_POINT = (739, 301)  # Steppes
 CAPTURE_REGION = (
     CAST_POINT[0] - 10,
     CAST_POINT[1] - 10,
     CAST_POINT[0] + 10,
     CAST_POINT[1] + 10,
 )
-THRESHOLD = 4.00
+THRESHOLD = 6.00
 
 while True:
     pyautogui.moveTo(298, 681)
@@ -34,7 +34,7 @@ while True:
     original_image = grab(
         bbox=CAPTURE_REGION,
     )
-    for x in range(0, 70):
+    for x in range(0, 90):
         current_image = grab(
             bbox=CAPTURE_REGION,
         )
@@ -54,4 +54,4 @@ while True:
         # Use 1.00 for Tarken Ascent
         if diff_pct > THRESHOLD:
             pyautogui.rightClick()
-            sleep(0.3)
+            sleep(1.0)
