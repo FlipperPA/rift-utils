@@ -7,19 +7,21 @@ from pyscreenshot import grab
 # In dark corner above rocks
 # Brevane / Cape Jule 8471, 11970 looking NW
 # Dusken / Steppes 15268, 8354 looking N / NW
-FISH_START = (730, 821)
-CAST_POINT = (725, 418)  # Cape Jule
-CAST_POINT = (739, 301)  # Steppes
+FISH_START = (1460, 1626)
+CAST_POINT = (1529, 671)
 CAPTURE_REGION = (
     CAST_POINT[0] - 10,
     CAST_POINT[1] - 10,
     CAST_POINT[0] + 10,
     CAST_POINT[1] + 10,
 )
+# Tweak the threshold depending on the background.
+# In Ashenfell for Scoria Fish, use 12. Most of the time, use 6.
 THRESHOLD = 6.00
 
 while True:
-    pyautogui.moveTo(298, 681)
+    # Minion Sender - Click Away!
+    pyautogui.moveTo(740, 1408)
     for x in range(0, 6):
         pyautogui.click()
         sleep(0.3)
