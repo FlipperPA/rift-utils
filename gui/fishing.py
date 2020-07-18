@@ -16,8 +16,11 @@ CAPTURE_REGION = (
     CAST_POINT[1] + 10,
 )
 # Tweak the threshold depending on the background.
-# In Ashenfell for Scoria Fish, use 12. Most of the time, use 6.
-THRESHOLD = 6.00
+# In Ashenfell for Scoria Fish, try 12 or higher. Most of the time, use 6.
+THRESHOLD = 15.00
+
+# Tweak the iterations depending on how fast your machine can screen capture.
+ITERATIONS = 130
 
 while True:
     # Minion Sender - Click Away!
@@ -36,7 +39,7 @@ while True:
     original_image = grab(
         bbox=CAPTURE_REGION,
     )
-    for x in range(0, 90):
+    for x in range(0, ITERATIONS):
         current_image = grab(
             bbox=CAPTURE_REGION,
         )
