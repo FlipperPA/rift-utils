@@ -3,10 +3,10 @@ from time import sleep
 import pyautogui
 from pyscreenshot import grab
 
-# Goboro Reef looking south, 4091, 6597
-# In dark corner above rocks
+# Goboro Reef looking south, 4091, 6597 In dark corner above rocks
 # Brevane / Cape Jule 8471, 11970 looking NW
 # Dusken / Steppes 15268, 8354 looking N / NW
+# Ashenfell for Scoria Fish 3150, 4950; point of rock looking north
 FISH_START = (1460, 1626)
 CAST_POINT = (1529, 671)
 CAPTURE_REGION = (
@@ -17,7 +17,7 @@ CAPTURE_REGION = (
 )
 # Tweak the threshold depending on the background.
 # In Ashenfell for Scoria Fish, try 12 or higher. Most of the time, use 6.
-THRESHOLD = 12.00
+THRESHOLD = 9.5
 
 # Tweak the iterations depending on how fast your machine can screen capture.
 ITERATIONS = 90
