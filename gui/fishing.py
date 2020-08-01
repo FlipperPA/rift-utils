@@ -17,10 +17,10 @@ CAPTURE_REGION = (
 )
 # Tweak the threshold depending on the background.
 # In Ashenfell for Scoria Fish, try 12 or higher. Most of the time, use 6.
-THRESHOLD = 15.00
+THRESHOLD = 12.00
 
 # Tweak the iterations depending on how fast your machine can screen capture.
-ITERATIONS = 130
+ITERATIONS = 90
 
 while True:
     # Minion Sender - Click Away!
