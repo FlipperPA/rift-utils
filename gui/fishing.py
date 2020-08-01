@@ -8,7 +8,7 @@ from pyscreenshot import grab
 # Dusken / Steppes 15268, 8354 looking N / NW
 # Ashenfell for Scoria Fish 3150, 4950; point of rock looking north
 FISH_START = (1460, 1626)
-CAST_POINT = (1750, 803)
+CAST_POINT = (1529, 671)
 CAPTURE_REGION = (
     CAST_POINT[0] - 10,
     CAST_POINT[1] - 10,
